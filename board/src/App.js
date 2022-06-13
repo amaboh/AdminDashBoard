@@ -12,12 +12,15 @@ import List from "./pages/list/List";
 
 import {productInputs, userInputs} from "./formSource"
 
-
+import "./styles/dark.scss"
 
 
 
 function App() { 
   return (
+    <div className="app dark">
+
+    
     <BrowserRouter>
     <Routes>
       <Route path='/'>
@@ -36,6 +39,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
+  </div>
   );
 }
 
